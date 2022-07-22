@@ -12,10 +12,10 @@ stages:
   - stage: pylint
     jobs:
       - job: pylint_test
-#         steps:
-#           - task: Bash@3
-#             inputs:
-#               targetType: "inline"
+        # steps:
+        #   - task: Bash@3
+        #     inputs:
+        #       targetType: "inline"
 #               script: |
 #                 pip install pylint==2.12.1
 #                 # pip install intel-tensorflow
@@ -26,9 +26,9 @@ stages:
 #                 # # fi
 #                 # # exit 0
 
-#   - stage: bandit
-#     jobs:
-#       - job: bandit_test
+  - stage: bandit
+    jobs:
+      - job: bandit_test
 #         steps:
 #           - task: Bash@3
 #             inputs:
