@@ -10,8 +10,8 @@ pool: wenjiao-test
 
 stages:
   - stage: pylint
-#     jobs:
-#       - job: pylint_test
+    jobs:
+      - job: pylint_test
 #         steps:
 #           - task: Bash@3
 #             inputs:
