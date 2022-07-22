@@ -8,9 +8,16 @@ trigger:
 pool:
   wenjiao-test
 
+
 steps:
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: 'pip install pylint==2.12.1'
+ - task: Maven@3
+   inputs:
+     mavenPomFile: 'pom.xml'
+     mavenOptions: '-Xmx3072m'
+     javaHomeOption: 'JDKVersion'
+     jdkVersionOption: '1.11'
+     jdkArchitectureOption: 'x64'
+     publishJUnitResults: false
+     testResultsFiles: '**/surefire-reports/TEST-*.xml'
+
 
