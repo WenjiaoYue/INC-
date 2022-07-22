@@ -8,8 +8,8 @@ pr:
 
 pool: wenjiao-test
 
-# stages:
-#   - stage: pylint
+stages:
+  - stage: pylint
 #     jobs:
 #       - job: pylint_test
 #         steps:
