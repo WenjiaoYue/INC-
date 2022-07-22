@@ -6,7 +6,7 @@ trigger:
 - main
 
 pool:
-  wenjiao-test
+  vmImage:wenjiao-test
 
 
 steps:
